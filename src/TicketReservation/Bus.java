@@ -1,5 +1,7 @@
 package TicketReservation;
 
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,15 +10,15 @@ public class Bus {
 
     private String numberPlate;//34 TPE 201
     private int numberOfSeat;//33
-    private List<String> seats=new ArrayList<>();//"1","2","3","4","5",...
+    private List<String> seats = new ArrayList<>();//"1","2","3","4","5",...
 
     //3-paramlı constructor:otobüs objesi oluşturulurken öz.leri verilecek
     public Bus(String numberPlate, int numberOfSeat) {
         this.numberPlate = numberPlate;
         this.numberOfSeat = numberOfSeat;
-        for (int i=1;i<=numberOfSeat;i++){
-          //  this.seats.add(String.valueOf(i));
-            this.seats.add(i+"");
+        for (int i = 1; i <= numberOfSeat; i++) {
+            //  this.seats.add(String.valueOf(i));
+            this.seats.add(i + "");
         }
     }
 
